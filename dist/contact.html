@@ -16,55 +16,58 @@
           </div>
           <nav class="header__nav">
             <ul>
-              <li><a href="#">Properties</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./properties.html">Properties</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
+            <a href="#" class="btn--primary">Get Started</a>
           </nav>
-          <a href="#" class="btn--primary">Get Started</a>
+          <button class="menu">Menu</button>
         </div>
       </div>
     </header>
 
-    <section class="py-20 h-[81.6dvh]">
+    <section class="py-20">
       <div class="container">
-        <p class="mb-10">CONTACT US</p>
-        <div class="grid grid-cols-[1.5fr_2fr] gap-10">
+        <p class="mb-10 pt-20 md:pt-0">CONTACT US</p>
+        <div class="grid grid-cols-1 md:grid-cols-[1.5fr_2fr] gap-10">
           <div class="left">
             <h3 class="mb-5">Let's working together</h3>
             <p class="mb-10">
               Thank you for your interest in our services. <br />
               We're excited to hear from you.
             </p>
-            <div class="contact">
-              <div class="bg-primary rounded-3xl p-2 h-fit">
-                <img src="../img/headphones-alt.png" alt="" />
+            <div class="flex flex-col items-center md:items-start">
+              <div class="contact">
+                <div class="p-2 bg-primary rounded-3xl h-fit">
+                  <img src="../img/phone.svg" alt="" />
+                </div>
+                <div class="contact--details">
+                  <p>Contact us for inquiry</p>
+                  <p class="font-bold">+258 (549) 2158 3215</p>
+                </div>
               </div>
-              <div class="contact--details">
-                <p>Contact us for inquiry</p>
-                <p class="font-bold">+258 (549) 2158 3215</p>
+              <div class="contact">
+                <div class="p-2 bg-primary rounded-3xl h-fit">
+                  <img src="../img/mail (1).svg" alt="" />
+                </div>
+                <div class="contact--details">
+                  <p>Email anytime</p>
+                  <p class="font-bold">realestate@mail.com</p>
+                </div>
               </div>
-            </div>
-            <div class="contact">
-              <div class="bg-primary rounded-3xl p-2 h-fit">
-                <img src="../img/headphones-alt.png" alt="" />
-              </div>
-              <div class="contact--details">
-                <p>Email anytime</p>
-                <p class="font-bold">realestate@mail.com</p>
-              </div>
-            </div>
-            <div class="contact">
-              <div class="bg-primary rounded-3xl p-2 h-fit">
-                <img src="../img/headphones-alt.png" alt="" />
-              </div>
-              <div class="contact--details">
-                <p>Visit our office</p>
-                <p class="font-bold">15 Maniel Lane, Frontline Berlin</p>
+              <div class="contact">
+                <div class="p-2 bg-primary rounded-3xl h-fit">
+                  <img src="../img/map-pin.svg" alt="" />
+                </div>
+                <div class="contact--details">
+                  <p>Visit our office</p>
+                  <p class="font-bold">15 Maniel Lane, Frontline Berlin</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="right flex flex-col gap-5">
+          <div class="flex flex-col gap-5 right">
             <div class="flex gap-5">
               <input type="text" placeholder="First Name" />
               <input type="text" placeholder="Last Name" />
@@ -75,18 +78,21 @@
               placeholder="Message"
               class="border border-primary rounded-xl py-2.5 px-6 font-bold h-52 mb-5"
             ></textarea>
-            <a href="#" class="btn--primary inline-block">Send Message</a>
+            <a href="#" class="inline-block btn--primary">Send Message</a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="py-5 font-thin text-white bg-primary">
+    <footer
+      class="py-5 font-thin text-white bg-primary relative md:fixed bottom-0 z-50 w-full"
+    >
       <div class="container">
         <small>
           Copyright © 2025 Real Estate, designed by HM. All rights reserved.
         </small>
       </div>
     </footer>
+    <script src="./menu.js"></script>
   </body>
 </html>
